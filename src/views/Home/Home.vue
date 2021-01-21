@@ -14,25 +14,18 @@
       </div>
     </div>
     <div class="card-list">
-      <div class="card-content mb-5" v-for="item in pageCards" :key="item.id">
+      <!-- <div class="card-content mb-5">
+        <Card v-bind:card="null" />
+      </div> -->
+
+      <div
+        class="card-content mb-5"
+        v-for="item in pageCards"
+        :key="item.id"
+        @click="goTo(item.id)"
+      >
         <Card v-bind:card="item" />
-        <div class="option-buttons-content">
-          <a class="button is-warning mb-2" @click="goEdit(item.id)">
-            <font-awesome-icon icon="edit" size="lg" />
-          </a>
-          <a class="button is-danger" @click="deleteCard(item.id)">
-            <font-awesome-icon icon="times" size="lg" />
-          </a>
-        </div>
       </div>
-      <div class="card-content">
-        <Card v-bind:card="null" v-on:new-card="goNew()" />
-      </div>
-      <jw-pagination
-        :items="cards"
-        @changePage="changePage"
-        :disableDefaultStyles="true"
-      ></jw-pagination>
     </div>
   </div>
 </template>

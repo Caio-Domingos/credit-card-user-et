@@ -13,10 +13,7 @@ export default {
           this.title = 'User - Home';
           break;
         case 'Card-Details':
-          this.title = 'User - Creating Card';
-          break;
-        case 'Card-Details-Prop':
-          this.title = 'User - Updating Card';
+          this.title = 'Your card';
           break;
       }
     },

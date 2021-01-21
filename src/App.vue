@@ -41,7 +41,6 @@
     .content {
       margin: 0 auto;
       max-width: 960px;
-      padding: 8px;
     }
   }
 

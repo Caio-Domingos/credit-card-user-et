@@ -4,6 +4,8 @@ import router from './router';
 import store from './store';
 
 import JwPagination from 'jw-vue-pagination';
+import InfiniteScroll from '@vue-cdk/infinite-scroll';
+import '@vue-cdk/infinite-scroll/style/index.css';
 
 import {
   faTimes,
@@ -45,6 +47,7 @@ library.add(
 Vue.component('jw-pagination', JwPagination);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
+Vue.use(InfiniteScroll);
 Vue.config.productionTip = false;
 
 new Vue({

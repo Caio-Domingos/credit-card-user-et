@@ -1,31 +1,4 @@
 #Card-Details {
-  max-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  #card-form {
-    width: 90%;
-    max-width: 850px;
-    .field {
-      .select {
-        width: 100%;
-        select {
-          width: 100%;
-        }
-      }
-
-      .file-label {
-        width: 100%;
-        .file-name {
-          flex: 1;
-          max-width: auto;
-        }
-      }
-    }
-
-    .button {
-      width: 50%;
-    }
-  }
+  min-width: 100vw;
+  min-height: calc(100vh - 80px);
 }
