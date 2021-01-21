@@ -33,6 +33,7 @@ export default {
   },
   methods: {},
   created() {
+    console.log('CARD COMPONENT', this.card);
     if (!this.card) return;
 
     this.brand = this.getBrand(this.card.brand);

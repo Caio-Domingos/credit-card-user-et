@@ -1,12 +1,15 @@
+import Home from './sections/Home';
+import Benefits from './sections/Benefits';
 import { mapGetters } from 'vuex';
 
 export default {
+  components: { Home, Benefits },
   data() {
     return {
       id: +this.$route.params.id,
       card: {},
       brand: {},
-      categorie: {},
+      category: {},
     };
   },
   created() {

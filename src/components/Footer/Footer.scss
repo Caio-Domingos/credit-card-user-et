@@ -1,0 +1,23 @@
+#Footer {
+  @mixin text-style($fSize, $fStyle, $fWeight, $lHeight, $lSpac) {
+    //styleName: H5 Mobile;
+    font-size: $fSize;
+    font-style: $fStyle;
+    font-weight: $fWeight;
+    line-height: $lHeight;
+    letter-spacing: $lSpac;
+  }
+  background-color: #252827;
+
+  color: white;
+
+  a {
+    @include text-style(14px, normal, 600, 20px, 0);
+
+    color: white;
+  }
+
+  .copy {
+    @include text-style(12px, normal, 400, 20px, 0);
+  }
+}

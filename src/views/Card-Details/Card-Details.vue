@@ -1,5 +1,8 @@
 <template>
-  <div id="Card-Details" class="container"></div>
+  <div id="Card-Details" class="container">
+    <Home :card="card" />
+    <Benefits />
+  </div>
 </template>
 
 <script src="./Card-Details.js"></script>

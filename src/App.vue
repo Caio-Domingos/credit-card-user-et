@@ -4,18 +4,20 @@
     <div class="content">
       <router-view />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
   import { mapActions } from 'vuex';
   import Nav from './components/Nav/Nav.vue';
+  import Footer from './components/Footer/Footer.vue';
 
   export default {
     data() {
       return {};
     },
-    components: { Nav },
+    components: { Nav, Footer },
     computed: {},
     methods: {
       ...mapActions(['populateCards']),
